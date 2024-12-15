@@ -48,7 +48,7 @@ if(isset($_POST['item'])){
         <lable >Status</lable>
         <select name="status" class="form-select">
             <option value="yes" >Yes</option> <!-- By default yes hota hai so -->
-            <option value="no" <?=($info['status']=='no')? 'selected': '';?> >NO</option>
+            <option value="no" <?=($info['status']??""=='no')?'selected':'';?> >NO</option>
         </select>
     </div>
     <div class="mb-3 text-center">
