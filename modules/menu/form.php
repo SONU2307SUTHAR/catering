@@ -13,6 +13,7 @@ if(isset($_POST['item'])){
     ];//project ko live k liye iss array ka use kiya h user hack nhi kr ske id ko
     
     if($obj->save($info,$uid)){
+        Session::set('gt',"Data".($uid?"Updated":"Saved")."Successfully");
         redirect("menu");//menu k index pr bhej dega
     }else{
         echo "Something Went Wrong!";

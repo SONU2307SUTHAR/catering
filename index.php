@@ -1,4 +1,6 @@
 <?php
+require_once "helper/Session.php";
+Session::init();//session class ko call kiya hai
 define('ROOT','http://localhost/event/');
 require_once "helper/redirect.php";
 require_once "helper/DB.php";
