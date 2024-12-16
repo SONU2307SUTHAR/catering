@@ -4,7 +4,7 @@ Session::init();//session class ko call kiya hai
 define('ROOT','http://localhost/event/');
 require_once "helper/redirect.php";
 require_once "helper/DB.php";
-$module="booking";
+$module="users";
 $file="index";
 $uid=null;
 $url=$_GET['url']??null;
