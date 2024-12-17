@@ -1,4 +1,5 @@
 <?php
+mustlogin();//login hone k bd hr page pr call kiya h
 $obj=DB('menu');
 if($uid){
     $info=$obj->find($uid);
