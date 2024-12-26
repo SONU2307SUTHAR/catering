@@ -2,6 +2,8 @@
 require_once "helper/Session.php";
 Session::init();//session class ko call kiya hai
 define('ROOT','http://localhost/event/');
+define('BNO',3);
+define('TIME',60);
 require_once "helper/redirect.php";
 require_once "helper/DB.php";
 $module="users";
