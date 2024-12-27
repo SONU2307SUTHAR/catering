@@ -9,7 +9,7 @@ if(isset($_POST['del'])){
     exit;
 }
 ?>
-<div class="mt-4">
+<div class="mt-3">
     <a href="<?=ROOT;?>menu/form" class="btn btn-primary">Add Item</a>
 </div>
 <?php if($msg=Session::get('gt')){
@@ -26,6 +26,7 @@ if(isset($_POST['del'])){
             <th>S.No</th>
             <th> <input type="checkbox" id="all" onclick="checkdel(this)" > <label for="all">All</label></th>
             <th>Item Name</th>
+            <th>Picture</th>
             <th>Categoris</th>
             <th>Status</th>
             <th>Item Inserted</th>
@@ -44,6 +45,15 @@ if(isset($_POST['del'])){
                 <a href="<?=ROOT;?>menu/form/<?=$info['id'];?>" 
                 title="Click for edit">  <!-- Item ko edit krne k liye  <td> m-->
             <?=$info['item'];?>
+                </a>
+            </td>
+            <td>
+                <?php if($info['picture']){ ?>
+            <img class="rounded-circle" src="<?=ROOT.'public/images/'.$info['picture'];?>" height="150px"> 
+            <?php }else{
+                echo "<span class='text-muted'>N/a";
+            }
+            ?>
             </td>
             <td><?=$info['category'];?></td>
             <td><?=$info['status'];?></td>

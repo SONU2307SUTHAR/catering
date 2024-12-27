@@ -1,7 +1,7 @@
 <?php
 function redirect($path){
     $path=ROOT.$path;
-    header("Location:$path");
+    header("location:$path");
 }
 function mustlogin(){ //login hone k bd 
     if(!Session::get('logindtl')){

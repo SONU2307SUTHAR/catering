@@ -11,12 +11,19 @@
       <link rel="https://cdn.datatables.net/2.1.8/css/dataTables.bootstrap5.css">
      <style>
       html,body{
-         height: 100%;
+         height: 130%;
       }
       .main{
          height: 100%;
          display: grid;
          grid-template-rows: 50px 1fr 30px;
+      }
+      .navbar-brand>span{
+        font-size: 20px;
+        color:rgb(56, 72, 136);
+        text-align: center;
+        font-weight: bold;
+        text-shadow: 2px 1px 3px #000;
       }
      </style>
 </head>
@@ -25,7 +32,7 @@
     <header>
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
   <div class="container-fluid">
-    <a class="navbar-brand" href="#">Catering System</a>
+    <a class="navbar-brand" href="#"><span>Catering System</span></a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
@@ -51,9 +58,21 @@
             <li><hr class="dropdown-divider"></li>
             <li><a class="dropdown-item" href="#">Something else here</a></li>
           </ul>
+          <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            User
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <li><a class="dropdown-item" href="<?=ROOT;?>users/form">Register</a></li>
+            <li><a class="dropdown-item" href="<?=ROOT;?>users/changepwd">Change Password</a></li>
+            <li><a class="dropdown-item" href="<?=ROOT;?>users/logout">Logout</a></li>
+            
+          </ul>
+          <!--
           <li class="nav-item">
           <a class="nav-link" href="<?=ROOT;?>users/logout">Logout</a>
         </li>
+        -->
         <?php }else{ ?>
         <li class="nav-item">
           <a class="nav-link" href="<?=ROOT;?>users/">Login</a>
@@ -68,4 +87,5 @@
 </nav>
     </header>
     <section>
+
     
