@@ -92,37 +92,3 @@ echo <<<JS
     </div>
 </div>
 </form>
-
-<style>
-    .pagetitle{
-        padding: 5px;
-        text-align: center;
-        font-size: 2em;
-        font-weight: bold;
-        color: #336;
-        text-shadow: 2px 1px 3px #000;
-        border-bottom: 1px solid #ccf;
-        margin-bottom: 5px;
-        
-    }
-    .pagetitle>span {
-        color: #778103;
-    }
-    .cont{
-        padding: 12px;
-        width: 70%;
-        margin: 10px auto;
-        box-shadow: 1px 1px 5px #334;
-        border-radius: 20px;
-    }
-    .F{
-        font-size: 15px;
-        color: #3498db;
-        text-align: right;
-        margin-bottom: 0.1px;
-        
-    }
-    .form-group label{
-        font-size: 15px;
-    }
-    </style>

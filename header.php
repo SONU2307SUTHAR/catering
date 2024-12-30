@@ -9,6 +9,8 @@
      crossorigin="anonymous">
      <link rel="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.3.0/css/bootstrap.min.css">
       <link rel="https://cdn.datatables.net/2.1.8/css/dataTables.bootstrap5.css">
+      <link rel="stylesheet" href="<?=ROOT;?>public/css/custom.css">
+      
      <style>
       html,body{
          height: 130%;
@@ -28,7 +30,7 @@
      </style>
 </head>
 <body>
- <div class="container border main">
+<div class="container border main">
     <header>
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
   <div class="container-fluid">
@@ -87,5 +89,4 @@
 </nav>
     </header>
     <section>
-
-    
+</body>
